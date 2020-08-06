@@ -11,7 +11,7 @@ const pics = {
   doggy: 'https://s3.amazonaws.com/codecademy-content/courses/React/react_photo-puppy.jpeg'
 };
 
-const img = <img src={pics['heads' ? 'kitty' : 'doggy']} />;
+const img = <img src={pics[coinToss() === 'heads' ? 'kitty' : 'doggy']} />;
 
 ReactDOM.render(
 	img, 
